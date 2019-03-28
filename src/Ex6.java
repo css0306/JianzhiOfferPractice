@@ -12,16 +12,6 @@
 import java.util.Arrays;
 
 public class Ex6 {
-    static class TreeNode { // 静态内部类TreeNode
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-    }
-
     public static TreeNode reConstructBinaryTree(int[] pre, int[] in) { // pre前序遍历，in中序遍历
         if (pre == null || in == null) {
             return null;
